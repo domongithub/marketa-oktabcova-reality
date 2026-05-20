@@ -297,11 +297,16 @@ export const properties: Property[] = [
     type: "Dům",
     size: "Rodinný dům",
     disposition: "RD",
-    image: "https://marketaoktabcova.cz/wp-content/uploads/2024/10/216A0098-HDR.jpg",
+    image: "/images/sold/prodano-rd-citoliby-louny/216A0465-HDR.jpg",
     gallery: [
+      "/images/sold/prodano-rd-citoliby-louny/216A0465-HDR.jpg",
+      "/images/sold/prodano-rd-citoliby-louny/216A0018-HDR.jpg",
+      "/images/sold/prodano-rd-citoliby-louny/216A0022-HDR.jpg",
+      "/images/sold/prodano-rd-citoliby-louny/216A0026-HDR.jpg",
+      "/images/sold/prodano-rd-citoliby-louny/216A0190-HDR.jpg",
+      "/images/sold/prodano-rd-citoliby-louny/216A0154-HDR.jpg",
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/216A0098-HDR.jpg",
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/216A0034-HDR.jpg",
-      "https://marketaoktabcova.cz/wp-content/uploads/2024/10/216A0018-HDR.jpg",
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/216A0138-HDR.jpg"
     ],
     excerpt: "Dům v původním stavu je částečně podsklepený, dispozičně řešený jako dvougenerační. V přízemí domu se nachází kuchyň, obytné pokoje a navazující zázemí.",

@@ -13,6 +13,7 @@ type PropertyInput = Partial<PropertyRecord> & {
 
 const completedStatuses = new Set<PropertyStatus>(["sold", "rented"]);
 const currentStatuses = new Set<PropertyStatus>(["active", "reserved"]);
+let publicPropertiesFallbackWarned = false;
 
 export function formatPrice(price: number | null, currency = "CZK", offerType: OfferType = "sale") {
   if (!price) return offerType === "rent" ? "Cena na dotaz/měsíc" : "Cena na dotaz";
@@ -87,7 +88,10 @@ export async function getPublicPropertyRecords() {
     .order("created_at", { ascending: false });
 
   if (error) {
-    console.warn("Public properties fallback:", error.message);
+    if (!publicPropertiesFallbackWarned) {
+      console.warn("Public properties fallback:", error.message);
+      publicPropertiesFallbackWarned = true;
+    }
     return null;
   }
 

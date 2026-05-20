@@ -35,7 +35,7 @@ const services = [
   }
 ];
 
-const heroProof = ["Osobní přístup", "Kvalitní prezentace", "Most a okolí"];
+const heroProof = ["Osobní přístup", "Kvalitní prezentace", "Ústecký kraj, Praha a okolí"];
 
 export const metadata = createMetadata({
   title: "Realitní makléř Most | Markéta Oktábcová reality",
@@ -58,7 +58,7 @@ export default async function Home() {
             Markéta Oktábcová
           </h1>
           <p className="mt-6 max-w-[520px] text-lg leading-8 text-muted md:text-[1.28rem] md:leading-9">
-            Bezpečný prodej nemovitostí v Mostě a okolí — s osobním vedením, kvalitní prezentací a jasným postupem.
+            Bezpečný prodej nemovitostí v Ústeckém kraji, Praze a okolí — s osobním vedením, kvalitní prezentací a jasným postupem.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Link href="/odhad" className="inline-flex items-center justify-center gap-3 bg-forest px-7 py-4 text-[0.92rem] font-semibold tracking-[0.01em] text-white transition duration-300 hover:-translate-y-px hover:bg-[#073b23] hover:shadow-[0_14px_34px_rgba(0,47,27,0.14)]">
@@ -134,11 +134,13 @@ export default async function Home() {
           </Link>
         </Reveal>
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-          {activeProperties.map((property) => (
+          {activeProperties.length ? activeProperties.map((property) => (
             <Reveal key={property.slug} delay={0.06}>
               <PropertyCard property={property} />
             </Reveal>
-          ))}
+          )) : (
+            <p className="text-lg text-muted md:col-span-2 lg:col-span-4">Aktuálně připravujeme nové nabídky.</p>
+          )}
         </div>
       </section>
 
