@@ -45,6 +45,7 @@ export default async function PropertyDetailPage({ params }: PropertyDetailProps
     notFound();
   }
   const isClosed = property.status === "Prodáno" || property.status === "Pronajato";
+  const detailImages = [property.image, ...property.gallery.filter((image) => image !== property.image)];
 
   return (
     <main>
@@ -116,7 +117,7 @@ export default async function PropertyDetailPage({ params }: PropertyDetailProps
       </section>
 
       <section className="container-wide">
-        <PropertyGallery images={property.gallery.length ? property.gallery : [property.image]} title={property.title} />
+        <PropertyGallery images={detailImages} title={property.title} />
       </section>
 
       <section className={`container-wide grid gap-14 py-20 ${isClosed ? "" : "lg:grid-cols-[1fr_360px]"}`}>

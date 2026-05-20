@@ -351,7 +351,7 @@ export const properties: Property[] = [
     type: "Byt",
     size: "56 m²",
     disposition: "2+1",
-    image: "https://marketaoktabcova.cz/wp-content/uploads/2024/10/kuch-0833.jpg",
+    image: "https://marketaoktabcova.cz/wp-content/uploads/2024/10/dum-0801.jpg",
     gallery: [
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/kuch-0833.jpg",
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/pokoj-0825.jpg",

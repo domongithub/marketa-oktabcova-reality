@@ -80,10 +80,10 @@ export default async function Home() {
         <div className="relative -mr-3 flex min-h-[430px] items-end justify-center overflow-hidden sm:min-h-[540px] lg:-mr-10 lg:min-h-[660px] lg:justify-end">
           <div className="absolute bottom-10 right-6 h-[75%] w-[72%] max-w-[545px] border border-gold/15 bg-[#f1eadf]/55" />
           <Image
-            src="/images/marketa-cutout.png"
+            src="/images/marketa-cutout-hq.png"
             alt="Markéta Oktábcová"
-            width={667}
-            height={1000}
+            width={1334}
+            height={2000}
             priority
             className="relative z-10 h-[505px] w-auto translate-x-5 -translate-y-3 object-contain object-bottom drop-shadow-[0_24px_34px_rgba(0,47,27,0.13)] sm:h-[650px] lg:h-[min(760px,calc(100svh-130px))] lg:translate-x-10 lg:-translate-y-2"
           />

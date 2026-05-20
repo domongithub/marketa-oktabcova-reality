@@ -6,13 +6,14 @@ import type { Property } from "@/lib/properties";
 export function PropertyCard({ property }: { property: Property }) {
   const badge = property.badge ?? (property.status === "Prodáno" || property.status === "Pronajato" ? property.status : "Na prodej");
   const isClosed = badge === "Prodáno" || badge === "Pronajato";
+  const cardImages = [property.image, ...property.gallery.filter((image) => image !== property.image)];
 
   return (
     <article className="group flex h-full flex-col border-t border-transparent pt-0 transition duration-300 hover:border-gold/45">
       <PropertyCardImages
         slug={property.slug}
         title={property.title}
-        images={property.gallery.length ? property.gallery : [property.image]}
+        images={cardImages}
         badge={badge}
         isClosed={isClosed}
       />
