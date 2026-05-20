@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -19,7 +19,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-forest/10 bg-[#fbfaf7]/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-gold/20 bg-[#002f1b] shadow-[0_10px_30px_rgba(0,47,27,0.08)]">
       <div className="container-wide flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3" aria-label="Markéta Oktábcová reality">
           <Image
@@ -31,7 +31,7 @@ export function Header() {
             className="h-[4.2rem] w-auto"
           />
         </Link>
-        <nav className="hidden items-center gap-8 text-sm text-forest lg:flex">
+        <nav className="hidden items-center gap-8 text-sm text-linen/90 lg:flex">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href} className="transition hover:text-gold">
               {item.label}
@@ -40,12 +40,12 @@ export function Header() {
         </nav>
         <a
           href="tel:+420602280203"
-          className="hidden border border-forest px-5 py-3 text-sm font-medium text-forest transition hover:bg-forest hover:text-white md:inline-flex"
+          className="hidden border border-gold/70 px-5 py-3 text-sm font-medium text-linen transition hover:bg-gold hover:text-forest md:inline-flex"
         >
           Zavolat
         </a>
         <button
-          className="inline-flex h-11 w-11 items-center justify-center border border-forest/20 text-forest lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center border border-gold/40 text-linen transition hover:border-gold hover:text-gold lg:hidden"
           onClick={() => setOpen((value) => !value)}
           aria-label={open ? "Zavřít menu" : "Otevřít menu"}
         >
@@ -53,13 +53,13 @@ export function Header() {
         </button>
       </div>
       {open ? (
-        <div className="border-t border-forest/10 bg-[#fbfaf7] lg:hidden">
+        <div className="border-t border-gold/15 bg-forest lg:hidden">
           <nav className="container-wide grid gap-1 py-5">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="py-3 text-lg text-forest"
+                className="py-3 text-lg text-linen transition hover:text-gold"
                 onClick={() => setOpen(false)}
               >
                 {item.label}

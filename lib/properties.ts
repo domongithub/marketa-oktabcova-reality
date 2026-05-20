@@ -174,7 +174,7 @@ export const properties: Property[] = [
     slug: "prodano-byt-2-1-most-rozmarynova",
     title: "Byt 2+1, Most Rozmarýnová",
     location: "Most, Rozmarýnová",
-    price: "Prodáno",
+    price: "1 450 000 Kč",
     status: "Prodáno",
     type: "Byt",
     size: "49 m²",
@@ -195,18 +195,18 @@ export const properties: Property[] = [
       "https://marketaoktabcova.cz/wp-content/uploads/2024/12/IMG_1573.jpg",
       "https://marketaoktabcova.cz/wp-content/uploads/2024/12/IMG_1580.jpg"
     ],
-    excerpt: "Byt v osobním vlastnictví se zasklenou lodžií našel nového majitele díky jasně nastavené prezentaci a správné ceně.",
-    description: "Prodaný byt 2+1 o výměře 49 m² v Mostě, v ulici Rozmarýnová. Byt v původním stavu se zasklenou lodžií nabízel prostor pro rekonstrukci podle vlastních představ.",
+    excerpt: "Nabízíme k prodeji byt 2+1 o velikosti 49 m² v Mostě. Byt se zasklenou lodžií zaujal praktickou dispozicí, dostupností služeb a možností rekonstrukce podle vlastních představ.",
+    description: "Prodaný byt 2+1 o výměře 49 m² v Mostě, v ulici Rozmarýnová. Byt v původním stavu se zasklenou lodžií nabízel prostor pro rekonstrukci podle vlastních představ a díky jasné prezentaci našel nového majitele.",
     highlights: ["Zasklená lodžie", "Dům s výtahem", "Osobní vlastnictví", "Prodáno"]
   },
   {
     slug: "prodano-mezonet-3-kk-usti-nad-labem",
     title: "Mezonetový byt 3+kk s galerií",
     location: "Ústí nad Labem, K Loděnice",
-    price: "Prodáno",
+    price: "5 790 000 Kč",
     status: "Prodáno",
     type: "Byt",
-    size: "3+kk",
+    size: "140 m²",
     disposition: "3+kk",
     image: "https://marketaoktabcova.cz/wp-content/uploads/2024/10/DSCF1257-HDR.jpg",
     gallery: [
@@ -217,18 +217,18 @@ export const properties: Property[] = [
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/svetove_strany.jpg",
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/2NP.jpg"
     ],
-    excerpt: "Netradiční mezonet s galerií zaujal prezentací prostoru, světla a atmosféry bydlení.",
-    description: "Prodaný mezonetový byt 3+kk s galerií v Ústí nad Labem, lokalita K Loděnice. Prodej stál na kvalitní prezentaci dispozice a charakteru bytu.",
+    excerpt: "Nabízíme byt 3+kk s otevřenou galerií v žádané lokalitě Ústí nad Labem. Prodej podpořila prezentace prostoru, světla, netradiční dispozice a příjemné atmosféry bydlení.",
+    description: "Prodaný mezonetový byt 3+kk s galerií v Ústí nad Labem, lokalita K Loděnice. Prodej stál na kvalitní prezentaci dispozice, charakteru bytu a velkorysé výměry 140 m².",
     highlights: ["Mezonet", "Galerie", "Ústí nad Labem", "Prodáno"]
   },
   {
     slug: "prodano-rd-brezineves-praha-8",
     title: "Rodinný dům Březiněves",
     location: "Praha 8, Březiněves",
-    price: "Prodáno",
+    price: "20 890 000 Kč",
     status: "Prodáno",
     type: "Dům",
-    size: "Rodinný dům",
+    size: "148 m²",
     disposition: "RD",
     image: "https://marketaoktabcova.cz/wp-content/uploads/2024/10/1xDinnigroom_final.jpg",
     gallery: [
@@ -238,15 +238,15 @@ export const properties: Property[] = [
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/1xKidsroom-gir_final.jpg",
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/1NP.jpg"
     ],
-    excerpt: "Rodinný dům v Praze našel nové majitele díky profesionální prezentaci a dobrému vedení prodeje.",
-    description: "Prodaný rodinný dům v lokalitě Březiněves, Praha 8. Nemovitost byla prezentována s důrazem na kvalitu interiéru a rodinné bydlení.",
+    excerpt: "Ráda bych vám chtěla představit prostorný rodinný dům na prodej o dispozici 5+1, který se nachází ve velmi žádané a klidné lokalitě Praha 8 - Březiněves.",
+    description: "Prodaný rodinný dům v lokalitě Březiněves, Praha 8. Nemovitost byla prezentována s důrazem na kvalitu interiéru, rodinné bydlení a výbornou dostupnost Prahy.",
     highlights: ["Praha 8", "Rodinný dům", "Kvalitní prezentace", "Prodáno"]
   },
   {
     slug: "prodano-byt-1-1-usti-severni-terasa",
     title: "Byt 1+1, Ústí nad Labem",
     location: "Ústí n. Labem, Severní Terasa",
-    price: "Prodáno",
+    price: "1 599 000 Kč",
     status: "Prodáno",
     type: "Byt",
     size: "33 m²",
@@ -258,15 +258,15 @@ export const properties: Property[] = [
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/image1.jpeg",
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/image5.jpeg"
     ],
-    excerpt: "Menší byt v žádané lokalitě Severní Terasy se prodal díky realistickému nacenění a jasné prezentaci.",
-    description: "Prodaný byt 1+1 o výměře 33 m² v Ústí nad Labem, lokalita Severní Terasa, ulice Šípková.",
+    excerpt: "Nabízíme k prodeji byt o dispozici 1+1 a rozloze 33 m² v žádané a klidné lokalitě Severní Terasa, Ústí nad Labem. Byt zaujal dostupností a jednoduchou údržbou.",
+    description: "Prodaný byt 1+1 o výměře 33 m² v Ústí nad Labem, lokalita Severní Terasa, ulice Šípková. Prodej podpořila realistická cena, čitelná prezentace a dobrá znalost lokality.",
     highlights: ["33 m²", "Severní Terasa", "Byt 1+1", "Prodáno"]
   },
   {
     slug: "prodano-rd-liba-cheb",
     title: "Rodinný dům Libá",
     location: "Libá, Cheb",
-    price: "Prodáno",
+    price: "3 638 000 Kč",
     status: "Prodáno",
     type: "Dům",
     size: "Rodinný dům",
@@ -278,15 +278,15 @@ export const properties: Property[] = [
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/2.jpg",
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/3.jpg"
     ],
-    excerpt: "Rodinný dům v Libé našel kupujícího díky prezentaci lokality, pozemku a možností dalšího využití.",
-    description: "Prodaný rodinný dům v obci Libá u Chebu. Prezentace pracovala s atmosférou místa a potenciálem nemovitosti.",
+    excerpt: "Podsklepený rodinný dům je před rekonstrukcí, disponuje dvěma nadzemními podlažími a podkrovím. Zájemce oslovila lokalita, pozemek i možnost vytvořit si bydlení podle sebe.",
+    description: "Prodaný rodinný dům v obci Libá u Chebu. Prezentace pracovala s atmosférou místa, velikostí pozemku a potenciálem domu k rekonstrukci.",
     highlights: ["Libá", "Cheb", "Rodinný dům", "Prodáno"]
   },
   {
     slug: "prodano-rd-citoliby-louny",
     title: "Rodinný dům Cítoliby",
     location: "Cítoliby, okr. Louny",
-    price: "Prodáno",
+    price: "4 890 000 Kč",
     status: "Prodáno",
     type: "Dům",
     size: "Rodinný dům",
@@ -298,15 +298,15 @@ export const properties: Property[] = [
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/216A0018-HDR.jpg",
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/216A0138-HDR.jpg"
     ],
-    excerpt: "Dům v okrese Louny byl prodán díky důrazu na prezentaci, stav nemovitosti a cílenou komunikaci.",
-    description: "Prodaný rodinný dům v Cítolibech, okres Louny. Ukázka prodeje mimo hlavní městské lokality s pečlivou prezentací.",
+    excerpt: "Dům v původním stavu je částečně podsklepený, dispozičně řešený jako dvougenerační. V přízemí domu se nachází kuchyň, obytné pokoje a navazující zázemí.",
+    description: "Prodaný rodinný dům v Cítolibech, okres Louny. Ukázka prodeje mimo hlavní městské lokality s pečlivou prezentací, důrazem na dispozici a cílenou komunikací se zájemci.",
     highlights: ["Cítoliby", "Okres Louny", "Rodinný dům", "Prodáno"]
   },
   {
     slug: "prodano-byt-3-1-most-j-haska",
     title: "Byt 3+1, Most J. Haška",
     location: "Most, J. Haška",
-    price: "Prodáno",
+    price: "1 499 000 Kč",
     status: "Prodáno",
     type: "Byt",
     size: "69 m²",
@@ -318,15 +318,15 @@ export const properties: Property[] = [
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/IMG-6898.jpg",
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/IMG-6924.jpg"
     ],
-    excerpt: "Byt 3+1 v Mostě se prodal díky konkrétní prezentaci dispozice, lokality a dostupnosti služeb.",
-    description: "Prodaný byt 3+1 o výměře 69 m² v Mostě, ulice J. Haška.",
+    excerpt: "Byt o dispozici 3+1 a rozloze 69 m², jehož součástí je zasklená lodžie. Byt se nachází v 7. NP a díky prezentaci lokality rychle oslovil vhodné zájemce.",
+    description: "Prodaný byt 3+1 o výměře 69 m² v Mostě, ulice J. Haška. Prodej podpořila konkrétní prezentace dispozice, výhledu, dostupnosti služeb a praktického bydlení.",
     highlights: ["69 m²", "Most", "Byt 3+1", "Prodáno"]
   },
   {
     slug: "prodano-byt-3-1-chomutov-vyletni",
     title: "Byt 3+1, Chomutov Výletní",
     location: "Chomutov, Výletní",
-    price: "Prodáno",
+    price: "2 199 000 Kč",
     status: "Prodáno",
     type: "Byt",
     size: "68 m²",
@@ -338,15 +338,15 @@ export const properties: Property[] = [
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/DSCF9305-HDR.jpg",
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/DSCF9308-HDR.jpg"
     ],
-    excerpt: "Prodej bytu v Chomutově podpořila dobrá prezentace interiéru a správně vedená komunikace se zájemci.",
-    description: "Prodaný byt 3+1 o výměře 68 m² v Chomutově, ulice Výletní.",
+    excerpt: "Byt je po kompletní rekonstrukci z letošního roku a disponuje moderní kuchyňskou linkou s vestavěnými spotřebiči. Prodej stál na kvalitních fotkách a jasném popisu stavu.",
+    description: "Prodaný byt 3+1 o výměře 68 m² v Chomutově, ulice Výletní. Prodej podpořila dobrá prezentace interiéru po rekonstrukci a správně vedená komunikace se zájemci.",
     highlights: ["68 m²", "Chomutov", "Byt 3+1", "Prodáno"]
   },
   {
     slug: "prodano-byt-2-1-most-hutnicka",
     title: "Byt 2+1, Most Hutnická",
     location: "Most, Hutnická",
-    price: "Prodáno",
+    price: "1 350 000 Kč",
     status: "Prodáno",
     type: "Byt",
     size: "56 m²",
@@ -358,18 +358,18 @@ export const properties: Property[] = [
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/dum-0801.jpg",
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/chodba-0865.jpg"
     ],
-    excerpt: "Byt v Mostě našel nového majitele díky praktické prezentaci, která ukázala jeho dispozici a možnosti využití.",
-    description: "Prodaný byt 2+1 o výměře 56 m² v Mostě, ulice Hutnická.",
+    excerpt: "Bytová jednotka se nachází ve 3. poschodí bez výtahu. V bytě proběhla rekonstrukce zhruba před 10 lety a prezentace ukázala praktické uspořádání i možnosti dalšího využití.",
+    description: "Prodaný byt 2+1 o výměře 56 m² v Mostě, ulice Hutnická. Byt našel nového majitele díky praktické prezentaci, která srozumitelně ukázala dispozici a stav nemovitosti.",
     highlights: ["56 m²", "Most", "Byt 2+1", "Prodáno"]
   },
   {
     slug: "prodano-chalupa-valterice-u-zandova",
     title: "Chalupa Valteřice u Žandova",
     location: "Valteřice u Žandova",
-    price: "Prodáno",
+    price: "4 700 000 Kč",
     status: "Prodáno",
     type: "Chalupa",
-    size: "Chalupa",
+    size: "1 911 m²",
     disposition: "Chalupa",
     image: "https://marketaoktabcova.cz/wp-content/uploads/2024/10/216A1467-HDR.jpg",
     gallery: [
@@ -378,18 +378,18 @@ export const properties: Property[] = [
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/216A1515-HDR.jpg",
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/216A1531-HDR.jpg"
     ],
-    excerpt: "Chalupa oslovila kupující atmosférou místa, fotkami a prezentací možností rekreačního využití.",
-    description: "Prodaná chalupa ve Valteřicích u Žandova. Prodej stál na prezentaci charakteru nemovitosti a klidné lokality.",
+    excerpt: "Chalupa ve Valteřicích u Žandova zaujala rozlehlým pozemkem, klidnou atmosférou a možností rekreačního využití. Prodej podpořily fotky, které ukázaly charakter místa.",
+    description: "Prodaná chalupa ve Valteřicích u Žandova. Prodej stál na prezentaci charakteru nemovitosti, klidné lokality a velkorysého pozemku.",
     highlights: ["Valteřice", "Chalupa", "Rekreační bydlení", "Prodáno"]
   },
   {
     slug: "prodano-komercni-objekt-bystrany-teplice",
     title: "Komerční objekt Bystřany",
     location: "Bystřany u Teplic",
-    price: "Prodáno",
+    price: "4 385 000 Kč",
     status: "Prodáno",
     type: "Komerční objekt",
-    size: "Komerční objekt",
+    size: "1 678 m²",
     disposition: "Komerce",
     image: "https://marketaoktabcova.cz/wp-content/uploads/2024/10/IMG-6490.jpg",
     gallery: [
@@ -403,8 +403,8 @@ export const properties: Property[] = [
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/IMG-6443.jpg",
       "https://marketaoktabcova.cz/wp-content/uploads/2024/10/IMG-6438.jpg"
     ],
-    excerpt: "Komerční objekt u Teplic byl prodán díky srozumitelnému představení prostoru a jeho investičního potenciálu.",
-    description: "Prodaný komerční objekt v Bystřanech u Teplic. Prezentace se zaměřila na prostor, polohu a možnosti dalšího využití.",
+    excerpt: "Máme tu zajímavou investiční příležitost pro investory a developery. Nemovitost se nachází v obci Bystřany u Teplic a nabízela výrazný prostor pro další využití.",
+    description: "Prodaný komerční objekt v Bystřanech u Teplic. Prezentace se zaměřila na prostor, polohu, investiční potenciál a možnosti dalšího rozvoje nemovitosti.",
     highlights: ["Bystřany", "Teplice", "Komerční objekt", "Prodáno"]
   }
 ];
