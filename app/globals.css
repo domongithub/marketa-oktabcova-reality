@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fbfaf7;
+  --foreground: #171717;
+  --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+  --font-serif: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, sans-serif;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #c9ae78;
+  outline-offset: 4px;
+}
+
+::selection {
+  background: #c9ae78;
+  color: #002f1b;
+}
+
+.container-wide {
+  width: min(100% - 32px, 1180px);
+  margin-inline: auto;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.property-image {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.hero-image {
+  min-height: clamp(440px, 68vh, 760px);
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
