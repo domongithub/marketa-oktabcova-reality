@@ -5,7 +5,7 @@ import { PropertyCard } from "@/components/PropertyCard";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { createMetadata } from "@/lib/site";
-import { activeProperties, soldProperties } from "@/lib/properties";
+import { getPublicProperties } from "@/lib/crm/properties";
 
 const services = [
   {
@@ -44,7 +44,11 @@ export const metadata = createMetadata({
   path: "/"
 });
 
-export default function Home() {
+export const revalidate = 60;
+
+export default async function Home() {
+  const { activeProperties, soldProperties } = await getPublicProperties();
+
   return (
     <main>
       <section className="container-wide grid min-h-[calc(100svh-80px)] gap-6 py-8 md:min-h-[82vh] lg:grid-cols-[0.86fr_1.14fr] lg:items-center lg:gap-2 lg:py-8">

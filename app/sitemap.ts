@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { properties } from "@/lib/properties";
+import { getPublicProperties } from "@/lib/crm/properties";
 import { absoluteUrl } from "@/lib/site";
 
 const staticRoutes = [
@@ -13,8 +13,9 @@ const staticRoutes = [
   "/kontakt"
 ];
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
+  const { properties } = await getPublicProperties();
 
   return [
     ...staticRoutes.map((route) => ({

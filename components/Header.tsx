@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navItems = [
+  { href: "/", label: "Úvodní stránka" },
   { href: "/nemovitosti", label: "Nemovitosti" },
   { href: "/správa-nemovitostí", label: "Správa" },
   { href: "/odhad", label: "Odhad" },
@@ -27,7 +28,7 @@ export function Header() {
             width={800}
             height={416}
             priority
-            className="h-14 w-auto"
+            className="h-[4.2rem] w-auto"
           />
         </Link>
         <nav className="hidden items-center gap-8 text-sm text-forest lg:flex">

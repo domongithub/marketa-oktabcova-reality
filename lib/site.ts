@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const siteConfig = {
   name: "Markéta Oktábcová reality",
-  url: "https://marketaoktabcova.cz",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://marketaoktabcova.cz",
   description:
     "Realitní makléřka pro Most, Chomutov, Litvínov a Ústecký kraj. Prodej nemovitosti, odhad ceny nemovitosti, pronájem a správa.",
   phone: "+420602280203",

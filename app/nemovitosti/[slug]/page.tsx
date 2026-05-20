@@ -3,20 +3,23 @@ import { ArrowLeft, Mail, Phone } from "lucide-react";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { PropertyGallery } from "@/components/PropertyGallery";
-import { properties } from "@/lib/properties";
+import { getPublicProperties, getPublicPropertyBySlug } from "@/lib/crm/properties";
 import { absoluteUrl, createMetadata } from "@/lib/site";
 
 type PropertyDetailProps = {
   params: Promise<{ slug: string }>;
 };
 
-export function generateStaticParams() {
+export const revalidate = 60;
+
+export async function generateStaticParams() {
+  const { properties } = await getPublicProperties();
   return properties.map((property) => ({ slug: property.slug }));
 }
 
 export async function generateMetadata({ params }: PropertyDetailProps) {
   const { slug } = await params;
-  const property = properties.find((item) => item.slug === slug);
+  const property = await getPublicPropertyBySlug(slug);
 
   if (!property) {
     return createMetadata({
@@ -36,11 +39,12 @@ export async function generateMetadata({ params }: PropertyDetailProps) {
 
 export default async function PropertyDetailPage({ params }: PropertyDetailProps) {
   const { slug } = await params;
-  const property = properties.find((item) => item.slug === slug);
+  const property = await getPublicPropertyBySlug(slug);
 
   if (!property) {
     notFound();
   }
+  const isClosed = property.status === "Prodáno" || property.status === "Pronajato";
 
   return (
     <main>
@@ -115,7 +119,7 @@ export default async function PropertyDetailPage({ params }: PropertyDetailProps
         <PropertyGallery images={property.gallery.length ? property.gallery : [property.image]} title={property.title} />
       </section>
 
-      <section className="container-wide grid gap-14 py-20 lg:grid-cols-[1fr_360px]">
+      <section className={`container-wide grid gap-14 py-20 ${isClosed ? "" : "lg:grid-cols-[1fr_360px]"}`}>
         <div>
           <h2 className="font-serif text-4xl text-forest">Popis nemovitosti</h2>
           <p className="mt-6 text-lg leading-8 text-muted">{property.description}</p>
@@ -127,31 +131,33 @@ export default async function PropertyDetailPage({ params }: PropertyDetailProps
             ))}
           </div>
         </div>
-        <aside className="h-fit bg-forest p-8 text-white">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">Zaujala vás nabídka?</p>
-          <h2 className="mt-5 font-serif text-4xl">Ozvěte se mi</h2>
-          <p className="mt-4 text-sm leading-7 text-white/75">
-            Ráda vám pošlu další informace, domluvím prohlídku nebo připravím srovnání podobných nemovitostí.
-          </p>
-          <div className="mt-8 grid gap-3">
-            <a href="tel:+420602280203" className="inline-flex items-center justify-center gap-3 border border-white/25 px-5 py-4 text-sm font-medium transition hover:bg-white hover:text-forest">
-              <Phone size={17} /> +420 602 280 203
-            </a>
-            <a href="mailto:reality@marketaoktabcova.cz" className="inline-flex items-center justify-center gap-3 bg-gold px-5 py-4 text-sm font-medium text-forest transition hover:bg-white">
-              <Mail size={17} /> Napsat e-mail
-            </a>
-            {property.sourceUrl ? (
-              <a
-                href={property.sourceUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center border border-white/25 px-5 py-4 text-sm font-medium transition hover:bg-white hover:text-forest"
-              >
-                Zobrazit na Sreality
+        {!isClosed ? (
+          <aside className="h-fit bg-forest p-8 text-white">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">Zaujala vás nabídka?</p>
+            <h2 className="mt-5 font-serif text-4xl">Ozvěte se mi</h2>
+            <p className="mt-4 text-sm leading-7 text-white/75">
+              Ráda vám pošlu další informace, domluvím prohlídku nebo připravím srovnání podobných nemovitostí.
+            </p>
+            <div className="mt-8 grid gap-3">
+              <a href="tel:+420602280203" className="inline-flex items-center justify-center gap-3 border border-white/25 px-5 py-4 text-sm font-medium transition hover:bg-white hover:text-forest">
+                <Phone size={17} /> +420 602 280 203
               </a>
-            ) : null}
-          </div>
-        </aside>
+              <a href="mailto:reality@marketaoktabcova.cz" className="inline-flex items-center justify-center gap-3 bg-gold px-5 py-4 text-sm font-medium text-forest transition hover:bg-white">
+                <Mail size={17} /> Napsat e-mail
+              </a>
+              {property.sourceUrl ? (
+                <a
+                  href={property.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center border border-white/25 px-5 py-4 text-sm font-medium transition hover:bg-white hover:text-forest"
+                >
+                  Zobrazit na Sreality
+                </a>
+              ) : null}
+            </div>
+          </aside>
+        ) : null}
       </section>
     </main>
   );

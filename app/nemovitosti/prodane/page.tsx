@@ -1,7 +1,7 @@
 import { PropertyCard } from "@/components/PropertyCard";
 import { SectionHeading } from "@/components/SectionHeading";
 import { createMetadata } from "@/lib/site";
-import { soldProperties } from "@/lib/properties";
+import { getPublicProperties } from "@/lib/crm/properties";
 
 export const metadata = createMetadata({
   title: "Prodané nemovitosti Most a okolí",
@@ -10,7 +10,11 @@ export const metadata = createMetadata({
   path: "/prodano"
 });
 
-export default function SoldPropertiesPage() {
+export const revalidate = 60;
+
+export default async function SoldPropertiesPage() {
+  const { soldProperties } = await getPublicProperties();
+
   return (
     <main className="container-wide py-16">
       <SectionHeading

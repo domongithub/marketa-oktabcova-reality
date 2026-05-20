@@ -3,7 +3,7 @@ export type Property = {
   title: string;
   location: string;
   price: string;
-  status: "Aktivní" | "Rezervováno" | "Prodáno";
+  status: "Aktivní" | "Rezervováno" | "Prodáno" | "Pronajato";
   type: string;
   size: string;
   disposition: string;
@@ -12,7 +12,7 @@ export type Property = {
   excerpt: string;
   description: string;
   highlights: string[];
-  badge?: "Na prodej" | "K pronájmu" | "Prodáno" | "Pronajato";
+  badge?: "Na prodej" | "K pronájmu" | "Rezervováno" | "Prodáno" | "Pronajato";
   sourceUrl?: string;
 };
 
@@ -409,5 +409,5 @@ export const properties: Property[] = [
   }
 ];
 
-export const activeProperties = properties.filter((property) => property.status !== "Prodáno");
-export const soldProperties = properties.filter((property) => property.status === "Prodáno");
+export const activeProperties = properties.filter((property) => property.status === "Aktivní" || property.status === "Rezervováno");
+export const soldProperties = properties.filter((property) => property.status === "Prodáno" || property.status === "Pronajato");
